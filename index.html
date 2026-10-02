@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>【期間限定】最強の入口×最強の出口 DAGRAM × SCALP FORCE コラボ4大特典｜XS.com</title>
-<meta name="description" content="300万を2億にしたスキャルパーDAGRAMと、出口を極めたスキャルピング集団SCALP FORCEの期間限定コラボ。XS.comの指定URLから口座開設で、会員限定生配信・公式オープンチャット・エグジット特化EA「TRAIL」・両者のTradingViewインジケーターの4大特典。">
+<meta name="description" content="300万を2億にしたスキャルパーDAGRAMと、出口を極めたスキャルピング集団SCALP FORCEの期間限定コラボ。XS.comの指定URLから口座開設で、会員限定生配信・公式オープンチャット・エグジット特化EA「TRAIL」・2つのTradingViewインジケーターの4大特典。">
 <meta property="og:title" content="最強の入口 × 最強の出口｜DAGRAM × SCALP FORCE 限定コラボ">
 <meta property="og:description" content="XS.comの指定URLから口座開設で、生配信・オプチャ・EA「TRAIL」・インジケーターの4大特典。">
 <meta property="og:image" content="hero-main.jpg">
@@ -15,11 +15,8 @@
    （決まっていない項目は "" のままでOK。ページは崩れません）
    ============================================================ */
 const CONFIG = {
-  XS_LINK:      "",                        // XS.com 指定URL（未定）  例: "https://...."
-  LINE_URL:     "https://lin.ee/Qqk01yC",  // 特典申請先の公式LINE（※XM版のNarrow公式LINEを仮設定・要確認）
-  START:        "",                        // コラボ開始（日本時間）  例: "2026-10-15T00:00"
-  END:          "",                        // コラボ終了（日本時間）  例: "2026-11-15T23:59"
-  PERIOD_TEXT:  "近日発表",                 // 期間の表示文言          例: "2026年10月15日(木)〜11月15日(日)"
+  XS_LINK:   "https://my.xs.com/ja/links/go/6067",        // XS.com 口座開設の指定URL（2026-10-03 ユーザー支給）
+  FORM_URL:  "https://forms.gle/yi9H719K3Vej6hmT8",       // コラボ申請フォーム（2026-10-03 ユーザー支給）
 };
 /* ============================================================ */
 </script>
@@ -155,6 +152,10 @@ a{color:inherit;}
 }
 .cta-btn.sub{background:transparent;color:var(--gold);border:1px solid rgba(236,198,95,.5);box-shadow:none;font-size:14.5px;padding:13px 16px;}
 .cta-btn.sub::after,.cta-btn.line::after{display:none;}
+.cta-btn.form{background:linear-gradient(180deg,#8ff3fb 0%,#29c3d3 40%,#0c8d9c 100%);color:#03181b;border-color:#b9f8ff;box-shadow:0 8px 24px rgba(41,195,211,.3), inset 0 1px 0 rgba(255,255,255,.6), inset 0 -3px 0 rgba(0,60,70,.35);}
+.cta-btn.form::after{display:none;}
+.tip{margin-top:18px;border-radius:12px;padding:12px 14px;font-size:12.5px;background:var(--teal-pale);border:1px solid rgba(41,195,211,.35);}
+.tip b{color:var(--teal);}
 .cta-btn.line{background:linear-gradient(180deg,#22dd6f 0%,var(--green) 55%,#04a344 100%);color:#fff;border-color:#4ef08f;box-shadow:0 8px 22px rgba(6,199,85,.3), inset 0 1px 0 rgba(255,255,255,.3);}
 
 /* ---- カウントダウン ---- */
@@ -169,6 +170,19 @@ a{color:inherit;}
 .cd-cell .num{font-family:var(--serif);font-size:26px;font-weight:900;color:#fff;font-variant-numeric:tabular-nums;line-height:1;}
 .cd-cell .u{font-size:10px;color:var(--gold);font-weight:700;margin-top:5px;display:block;}
 .cd-note{font-size:11px;color:#c49aa0;margin-top:9px;}
+
+/* ---- 期間限定の帯（日付は出さずに緊急性を伝える） ---- */
+.limited{
+  text-align:center;padding:22px 20px 24px;position:relative;overflow:hidden;
+  background:linear-gradient(90deg,#120405,#2a070b 50%,#120405);
+  border-top:1px solid rgba(216,31,46,.55);border-bottom:1px solid rgba(216,31,46,.55);
+}
+.limited::before{content:"";position:absolute;inset:0;background:url(brush.jpg) center/140% 120% no-repeat;mix-blend-mode:screen;opacity:.22;}
+.limited > *{position:relative;}
+.lb-tag{font-family:var(--serif);font-size:11px;font-weight:900;letter-spacing:.3em;color:#ff8f99;}
+.lb-main{font-family:var(--mincho);font-weight:900;font-size:24px;line-height:1.45;margin-top:6px;}
+.lb-sub{font-size:12.5px;color:#d9b9bd;margin-top:10px;line-height:1.75;}
+.lb-sub b{color:#fff;}
 
 /* ---- セクション共通 ---- */
 section{padding:60px 20px;position:relative;}
@@ -372,10 +386,10 @@ section{padding:60px 20px;position:relative;}
         <div class="perk"><span class="no goldc">01</span><img src="icon-live.jpg" alt="" width="84" height="84"><h3>限定生配信</h3><p>会員限定ライブに参加</p><span class="who g">DAGRAM／Discord</span></div>
         <div class="perk"><span class="no goldc">02</span><img src="icon-chat.jpg" alt="" width="84" height="84"><h3>公式オプチャ</h3><p>トレーダー仲間と交流</p><span class="who t">SCALP FORCE／LINE</span></div>
         <div class="perk"><span class="no goldc">03</span><img src="icon-ea.jpg" alt="" width="84" height="84"><h3>EA「TRAIL」</h3><p>エグジット特化のEA</p><span class="who t">SCALP FORCE／MT5</span></div>
-        <div class="perk"><span class="no goldc">04</span><img src="icon-ind.jpg" alt="" width="84" height="84"><h3>インジケーター</h3><p>両者のインジを利用可能</p><span class="who b">2人分／TradingView</span></div>
+        <div class="perk"><span class="no goldc">04</span><img src="icon-ind.jpg" alt="" width="84" height="84"><h3>インジケーター</h3><p>2つのインジを利用可能</p><span class="who b">2種／TradingView</span></div>
       </div>
 
-      <div class="period"><span class="k">⏳ コラボ期間</span><span class="js-period">近日発表</span></div>
+      <div class="period"><span class="k">⚡ 期間限定</span>この2つが組む、今だけの特典</div>
 
       <a href="#" class="cta-btn js-xs"><span class="cta-tag">限定</span>4大特典付きで口座開設する<small>▶ XS.com公式へ（本ページの指定URL経由が条件）</small></a>
       <a href="#tokuten" class="cta-btn sub">4大特典の詳しい内容を見る</a>
@@ -383,15 +397,10 @@ section{padding:60px 20px;position:relative;}
   </header>
 
   <!-- ============ カウントダウン ============ -->
-  <div class="countdown" id="countdown">
-    <div class="cd-label" id="cdLabel">コラボ特典の受付終了まで</div>
-    <div class="cd-timer">
-      <div class="cd-cell"><span class="num" id="cdD">--</span><span class="u">日</span></div>
-      <div class="cd-cell"><span class="num" id="cdH">--</span><span class="u">時間</span></div>
-      <div class="cd-cell"><span class="num" id="cdM">--</span><span class="u">分</span></div>
-      <div class="cd-cell"><span class="num" id="cdS">--</span><span class="u">秒</span></div>
-    </div>
-    <p class="cd-note">コラボ期間：<span class="js-period">近日発表</span>（日本時間）</p>
+  <div class="limited">
+    <div class="lb-tag">LIMITED COLLABORATION</div>
+    <p class="lb-main"><span class="chrome">この組み合わせは、</span><br><span class="goldc">いつまでも続かない。</span></p>
+    <p class="lb-sub">4大特典を受け取れるのは、<br>期間中に<b>指定URLから開設・申請した方だけ</b>。<br>受付は予告なく終了する場合があります。</p>
   </div>
 
   <!-- ============ WHY：入口×出口 ============ -->
@@ -505,8 +514,8 @@ section{padding:60px 20px;position:relative;}
     <div class="tk b reveal">
       <span class="tk-no">04</span><img class="ic" src="icon-ind.jpg" alt="">
       <div><div class="tk-tags"><span class="tag who g">DAGRAM</span><span class="tag who t">SCALP FORCE</span><span class="tag plat">TradingView</span></div>
-      <h3>2人の<br>TradingViewインジケーター</h3>
-      <p>DAGRAMとSCALP FORCE、<b>両者のTradingViewインジケーター</b>を利用できます。</p></div>
+      <h3>2つの<br>TradingViewインジケーター</h3>
+      <p>DAGRAMとSCALP FORCE、<b>2つのTradingViewインジケーター</b>を利用できます。入口と出口の判断に。</p></div>
     </div>
 
     <div class="flow reveal">
@@ -518,7 +527,7 @@ section{padding:60px 20px;position:relative;}
       </div>
     </div>
 
-    <a href="#" class="cta-btn js-xs" style="margin-top:26px;"><span class="cta-tag">限定</span>特典付きでXS.comの口座を開設する<small>▶ コラボ期間中のみの特典です</small></a>
+    <a href="#" class="cta-btn js-xs" style="margin-top:26px;"><span class="cta-tag">限定</span>特典付きでXS.comの口座を開設する<small>▶ 受付が終わる前に、今すぐ</small></a>
   </section>
 
   <!-- ============ 受け取り方 ============ -->
@@ -530,9 +539,10 @@ section{padding:60px 20px;position:relative;}
     <div class="steps">
       <div class="step reveal"><div class="n">1</div><div><h4>このページのボタンから<br>XS.comの口座を開設</h4><p>他のリンクからは<b>特典対象外</b>です。</p></div></div>
       <div class="step reveal"><div class="n">2</div><div><h4>本人確認を済ませて<br>口座を有効化</h4><p>画面の案内に沿って書類を提出します。</p></div></div>
-      <div class="step reveal"><div class="n">3</div><div><h4>公式LINEで特典を申請</h4><p>口座開設が完了した画面を送ると、<b>4大特典の参加・利用方法</b>をご案内します。</p></div></div>
+      <div class="step reveal"><div class="n">3</div><div><h4>コラボ申請フォームに記入</h4><p>XSの口座番号と、LINEオプチャ・Discord・TradingViewのユーザー名を入力します。<br>確認後、<b>順次4大特典の権限</b>が届きます。</p></div></div>
     </div>
-    <a href="#" class="cta-btn line js-line" style="margin-top:26px;">公式LINEで特典を申請する<small>▶ 登録無料・口座開設後にご利用ください</small></a>
+    <div class="tip reveal">💡 <b>LINE・Discord・TradingView</b>のアカウントを<br>先に用意しておくと、申請がスムーズです。</div>
+    <a href="#" class="cta-btn form js-form" style="margin-top:22px;">コラボ申請フォームを開く<small>▶ XSの口座開設が終わったらこちら</small></a>
   </section>
 
   <!-- ============ 注意 ============ -->
@@ -543,7 +553,9 @@ section{padding:60px 20px;position:relative;}
       <ul>
         <li>検索や他サイトから直接XS.comにアクセスして開設した口座は、<b>特典の対象外</b>になります。</li>
         <li>口座開設のボタンは<b>必ずこのページ内のもの</b>をご利用ください。</li>
-        <li>特典の受付は<b>コラボ期間中のみ</b>です。</li>
+        <li>他のサロンやサイト経由ですでにXS口座をお持ちの方は、<b>別のメールアドレスで新しくアカウントを作成</b>してください。</li>
+        <li>登録した口座の利用が<b>1か月ない場合</b>などは、特典（オープンチャット等）から退出となる場合があります。</li>
+        <li>特典の受付は<b>コラボ期間中のみ</b>。予告なく終了する場合があります。</li>
       </ul>
     </div>
     <a href="#" class="cta-btn js-xs" style="margin-top:24px;">指定URLから口座開設する<small>▶ このボタンからなら特典対象です</small></a>
@@ -557,7 +569,11 @@ section{padding:60px 20px;position:relative;}
 
     <details>
       <summary>4大特典はすべて受け取れますか？</summary>
-      <p class="a">はい。<b>本ページの指定URLからXS.comの口座を開設</b>し、公式LINEで申請いただいた方に、4大特典すべての参加・利用方法をご案内します。</p>
+      <p class="a">はい。<b>本ページの指定URLからXS.comの口座を開設</b>し、コラボ申請フォームで申請いただいた方は、確認後に4大特典すべての権限を順次お受け取りいただけます。</p>
+    </details>
+    <details>
+      <summary>申請後、いつから特典を使えますか？</summary>
+      <p class="a">申請内容を確認し、問題がなければ<b>順次</b>各サービスの権限をお送りします。口座番号やユーザー名に記入ミスがあると受け取れない場合があるため、正確にご記入ください。</p>
     </details>
     <details>
       <summary>EA「TRAIL」は何で使えますか？</summary>
@@ -565,7 +581,7 @@ section{padding:60px 20px;position:relative;}
     </details>
     <details>
       <summary>インジケーターは何で使いますか？</summary>
-      <p class="a"><b>TradingView</b>で使うインジケーターです。DAGRAMとSCALP FORCE、両者のインジケーターを利用できます。</p>
+      <p class="a"><b>TradingView</b>で使うインジケーターです。DAGRAMとSCALP FORCE、2つのインジケーターを利用できます。</p>
     </details>
     <details>
       <summary>TRAILやインジで必ず勝てますか？</summary>
@@ -573,7 +589,11 @@ section{padding:60px 20px;position:relative;}
     </details>
     <details>
       <summary>すでにXS.comの口座を持っています。対象になりますか？</summary>
-      <p class="a">既存口座の取り扱いについては、お手数ですが<b>公式LINE</b>からお問い合わせください。</p>
+      <p class="a"><b>dagram MASTER CLASS・SCALP FORCEで開設したXS口座</b>をお持ちの方は、新たな開設は不要です。申請フォームに登録済みの口座番号をご記入ください。<br>他のサロンやサイト経由でXS口座をお持ちの方は、<b>別のメールアドレスで新しくアカウントを作成</b>してください（XS.comでは複数アカウントの作成が認められています）。</p>
+    </details>
+    <details>
+      <summary>コラボはいつまでですか？</summary>
+      <p class="a">期間限定のコラボです。受付は<b>予告なく終了する場合がある</b>ため、お早めのお申し込みをおすすめします。</p>
     </details>
     <details>
       <summary>FX初心者でも参加できますか？</summary>
@@ -593,8 +613,8 @@ section{padding:60px 20px;position:relative;}
       <img class="sf" src="sf-logo.png" alt="SCALP FORCE">
     </div>
     <h2 class="sec-title reveal"><span class="chrome">最強の</span><span class="goldc">入口</span><span class="chrome">と</span><span class="tealc">出口</span><span class="chrome">を、</span><br><span class="brush"><span class="chrome">あなたの武器に。</span></span></h2>
-    <p class="sec-lead reveal" style="margin-bottom:0">コラボ限定の4大特典は、期間中だけ。</p>
-    <a href="#" class="cta-btn js-xs"><span class="cta-tag">限定</span>4大特典付きで口座開設する<small>▶ XS.com／コラボ期間：<span class="js-period">近日発表</span></small></a>
+    <p class="sec-lead reveal" style="margin-bottom:0">この2つが手を組むのは、今だけ。</p>
+    <a href="#" class="cta-btn js-xs"><span class="cta-tag">限定</span>4大特典付きで口座開設する<small>▶ XS.com公式へ／受付終了の前に</small></a>
   </section>
 
   <!-- ============ リスク・免責 ============ -->
@@ -621,34 +641,15 @@ section{padding:60px 20px;position:relative;}
 </div>
 
 <script>
-/* ---- リンク・期間の差し込み ---- */
-document.querySelectorAll('.js-xs').forEach(a=>{
-  if(CONFIG.XS_LINK){a.href=CONFIG.XS_LINK;a.target="_blank";a.rel="noopener";}
-  else{a.addEventListener('click',e=>{e.preventDefault();alert('口座開設URLは準備中です。');});}
-});
-document.querySelectorAll('.js-line').forEach(a=>{a.href=CONFIG.LINE_URL;a.target="_blank";a.rel="noopener";});
-document.querySelectorAll('.js-period').forEach(e=>{e.textContent=CONFIG.PERIOD_TEXT;});
-
-/* ---- カウントダウン（日本時間）。期間が未設定なら「近日発表」表示のまま ---- */
-(function(){
-  const label=document.getElementById('cdLabel');
-  if(!CONFIG.START||!CONFIG.END){label.textContent="コラボ期間は近日発表";return;}
-  const START=new Date(CONFIG.START+":00+09:00").getTime();
-  const END=new Date(CONFIG.END+":59+09:00").getTime();
-  const set=(id,v)=>document.getElementById(id).textContent=v;
-  function tick(){
-    const now=Date.now();let target;
-    if(now<START){label.textContent="コラボ開始まで";target=START;}
-    else if(now<=END){label.textContent="コラボ特典の受付終了まで";target=END;}
-    else{label.textContent="本コラボの受付は終了しました";['cdD','cdH','cdM','cdS'].forEach(id=>set(id,"0"));return;}
-    const d=target-now;
-    set('cdD',Math.floor(d/86400000));
-    set('cdH',String(Math.floor(d%86400000/3600000)).padStart(2,'0'));
-    set('cdM',String(Math.floor(d%3600000/60000)).padStart(2,'0'));
-    set('cdS',String(Math.floor(d%60000/1000)).padStart(2,'0'));
-  }
-  tick();setInterval(tick,1000);
-})();
+/* ---- リンクの差し込み（URLは冒頭の CONFIG で管理） ---- */
+function wire(sel,url){
+  document.querySelectorAll(sel).forEach(a=>{
+    if(url){a.href=url;a.target="_blank";a.rel="noopener";}
+    else{a.addEventListener('click',e=>{e.preventDefault();alert('準備中です。');});}
+  });
+}
+wire('.js-xs',CONFIG.XS_LINK);
+wire('.js-form',CONFIG.FORM_URL);
 
 /* ---- 追従CTA：ヒーローを過ぎたら表示 ---- */
 const sticky=document.getElementById('stickyCta');
